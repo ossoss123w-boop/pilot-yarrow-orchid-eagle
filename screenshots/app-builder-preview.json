@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "BY MONTA",
+      "hasCanvas": false,
+      "bodyTextLen": 2933,
+      "bodyTextHash": "a80aae427214d8b4e546ca61654248ae808e35813670a1e75f67cdfbc66d72c2",
+      "bodyTextPrefix": "BY MONTA Buscar Filtrar EN JP Aleatorio Catálogo Novedades Mi li",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <CatchBoundary getResetKey={function getResetKey} onCatch={function}>\n      <MatchImpl routeId=\"__root__\">\n        <MatchView router={{...}} match={{id:\"__root__/\", ...}}>\n          <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n            <MatchInnerImpl match={{id:\"__root__/\", ...}}>\n              <TSRComponent>\n                <html lang=\"es\" suppressHydrationWarning={true}>\n                  <head>\n                  <body className=\"min-h-scre...\">\n                    <PreviewHostBridge>\n                    <AuthProvider>\n                      <SiteHeader>\n                        <header className=\"sticky top...\">\n                          <div className=\"mx-auto fl...\">\n                            <div>\n                            <form onSubmit={function onSubmit} className=\"relative o...\">\n                              <div className=\"flex h-11 ...\">\n                                <input\n                                  value=\"\"\n                                  onChange={function onChange}\n                                  onFocus={function onFocus}\n                                  placeholder=\"Buscar anime...\"\n                                  aria-label=\"Buscar anime\"\n                                  className=\"h-full w-full bg-transparent text-base outline-none placeholder:text-fiel...\"\n-                                 style={{caret-color:\"transparent\"}}\n                                >\n                                ...\n                            ...\n                      ...\n                    ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "BY MONTA",
+      "hasCanvas": false,
+      "bodyTextLen": 2904,
+      "bodyTextHash": "67b0a06fdafc7c0bfcdde25476f1a237c73ac425e998965c60a6614a1ec3b8d1",
+      "bodyTextPrefix": "BY MONTA Buscar Filtrar EN JP Mi lista Destacado 02 Hello, I am ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

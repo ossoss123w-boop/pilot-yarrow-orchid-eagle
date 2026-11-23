@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", "Outfit", ui-sans-serif, sans-serif;
+  --font-arabic: "Noto Naskh Arabic", "Outfit", serif;
+  --color-bg: #12101a;
+  --color-surface: #1c1828;
+  --color-elevated: #2a2438;
+  --color-fg: #f6f3f8;
+  --color-muted: #b3a8c2;
+  --color-primary: #f3a8c9;
+  --color-primary-fg: #2c1020;
+  --color-field: #f3f1f6;
+  --color-field-fg: #1b1522;
+  --color-info: #9ad7f5;
+  --color-border: #3a334c;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-fg);
+  }
+}
+
+@utility spine {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,11 @@
+1
+00:00:01,000 --> 00:00:05,000
+Subtítulo cargado desde un archivo SRT.
+
+2
+00:00:05,200 --> 00:00:10,000
+El formato SRT se lee dentro del reproductor.
+
+3
+00:00:10,200 --> 00:00:15,000
+Activa RTL si el archivo está en árabe.
